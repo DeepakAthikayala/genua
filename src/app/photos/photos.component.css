@@ -1,0 +1,7 @@
+@media(max-width: 520px){
+	button{
+		padding: 0;
+		left:0;
+		top: 0;
+	}
+}

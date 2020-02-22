@@ -1,0 +1,10 @@
+<button class="btn btn-dark" (click)="goBack()" style="position: absolute; top: 1rem; left: 1rem"><i class="far fa-hand-point-left"></i> Go Back</button>
+<h1 class="display-4 my-5 text-center">List of Albums</h1>
+
+<div class="container">
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor="let album of albums">
+			{{album.title}}<button class="btn btn-success float-right" routerLink="/photos/albumId/{{album.id}}">View photos</button>
+		</li>
+	</ul>
+</div>

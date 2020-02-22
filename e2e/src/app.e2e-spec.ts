@@ -1,16 +1,16 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, by, element } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new AppPage(); 
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('project-genua app is running!');
+    expect(page.getTitleText()).toEqual('ProjectGenua');
   });
 
   afterEach(async () => {

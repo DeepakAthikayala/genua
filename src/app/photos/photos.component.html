@@ -1,0 +1,8 @@
+<button class="btn btn-dark" (click)="goBack()" style="position: absolute; top: 1rem; left: 1rem"><i class="far fa-hand-point-left"></i> Go Back</button>
+<h1 class="display-4 text-center my-5">Photo Gallery</h1>
+<div class="row m-0">
+	<div class="col-lg-3 col-sm-6 my-2" *ngFor="let photo of photos">
+		<img src="{{photo.url}}" class="w-100 img-thumbnail">
+		<p>{{photo.title}}</p>
+	</div>
+</div>

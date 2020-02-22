@@ -1,0 +1,26 @@
+.col-3{
+	line-height: 30px;
+}
+h3{
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 1.25rem;
+}
+
+@media(max-width: 620px){
+	h3{
+		font-size: 4vw;
+	}
+	a{
+		padding: 0;
+	}
+}
+
+@media(min-width: 900px){
+	.ph-al{
+		display: flex;
+		justify-content: space-between;
+		align-self: center;
+	}
+
+}
